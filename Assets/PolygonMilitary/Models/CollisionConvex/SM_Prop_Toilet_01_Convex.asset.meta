@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1b200c9b51a0b964fb901132828dcb16
+timeCreated: 1596420519
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Models/CollisionConvex/SM_Prop_Toilet_01_Convex.asset
+  uploadId: 735260

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6b74da1cf295d7f43a6f9249d91d7fbf
+timeCreated: 1591238587
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Prefabs/Props/Pipeline/SM_Prop_Pipeline_SmokeStack_Pipe_01.prefab
+  uploadId: 735260

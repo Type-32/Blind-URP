@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6ebbfe37d3eb6ea42a2d77e2c58e1a7d
+timeCreated: 1596421879
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Models/CollisionConvex/SM_Item_Pouch_04_Convex.asset
+  uploadId: 735260

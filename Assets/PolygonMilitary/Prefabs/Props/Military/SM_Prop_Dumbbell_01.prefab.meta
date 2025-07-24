@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: eb65b3cf9bf1ffa428b5f55df18d2f65
+timeCreated: 1592967416
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Prefabs/Props/Military/SM_Prop_Dumbbell_01.prefab
+  uploadId: 735260

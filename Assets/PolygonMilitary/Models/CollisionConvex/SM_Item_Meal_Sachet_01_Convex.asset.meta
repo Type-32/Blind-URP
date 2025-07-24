@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1647a6d6615507f42ad66427a1bac3e7
+timeCreated: 1596421868
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Models/CollisionConvex/SM_Item_Meal_Sachet_01_Convex.asset
+  uploadId: 735260

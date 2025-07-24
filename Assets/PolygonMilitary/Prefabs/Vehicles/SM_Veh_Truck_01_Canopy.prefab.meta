@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 649b7278b96ed4f42821430f38be1b70
+timeCreated: 1595285714
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Prefabs/Vehicles/SM_Veh_Truck_01_Canopy.prefab
+  uploadId: 735260

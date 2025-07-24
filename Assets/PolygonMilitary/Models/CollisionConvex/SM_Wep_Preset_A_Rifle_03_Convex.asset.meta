@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c80463f84f4dec14b8f780b8c3898b85
+timeCreated: 1596422938
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Models/CollisionConvex/SM_Wep_Preset_A_Rifle_03_Convex.asset
+  uploadId: 735260

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 85b380e56263e2240b734eabb9dbb06f
+timeCreated: 1595292893
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Prefabs/Vehicles/Destroyed/SM_Veh_APC_Heavy_01_Destroyed.prefab
+  uploadId: 735260

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5c653ba36e943444ea3675f984edb7ed
+timeCreated: 1595369826
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Prefabs/Characters/Attachments/SM_Chr_Attach_Helmet_04.prefab
+  uploadId: 735260

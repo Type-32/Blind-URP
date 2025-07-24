@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 75c5448543fb71344b70b1dfc2d05ff5
+timeCreated: 1596420568
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Models/CollisionConvex/SM_Prop_RopeSlide_01_Convex.asset
+  uploadId: 735260

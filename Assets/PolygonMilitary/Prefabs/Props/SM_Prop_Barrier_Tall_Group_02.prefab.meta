@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f704485f528d9244bb1a9183a463cf1d
+timeCreated: 1591926771
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Prefabs/Props/SM_Prop_Barrier_Tall_Group_02.prefab
+  uploadId: 735260

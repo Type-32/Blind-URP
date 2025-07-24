@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 18aeec7ff9aa17e4d968d22617ca2fbc
+timeCreated: 1591064135
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Prefabs/Environment/SM_Env_Grass_03.prefab
+  uploadId: 735260

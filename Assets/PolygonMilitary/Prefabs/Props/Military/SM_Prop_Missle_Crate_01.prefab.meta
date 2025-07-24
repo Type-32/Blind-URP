@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3e88e1ef19880514aa4ee9b6c25ca245
+timeCreated: 1593042114
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Prefabs/Props/Military/SM_Prop_Missle_Crate_01.prefab
+  uploadId: 735260

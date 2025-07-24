@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 302c1ad5b89fdcf4ca1cb5f2e48498fa
+timeCreated: 1596420507
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Models/CollisionConvex/SM_Prop_Barrier_Tall_01_Convex.asset
+  uploadId: 735260

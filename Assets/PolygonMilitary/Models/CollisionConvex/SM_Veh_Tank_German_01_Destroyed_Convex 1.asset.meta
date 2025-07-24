@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: cdc0f022a3a61444fb919183e04f77a9
+timeCreated: 1596422865
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Models/CollisionConvex/SM_Veh_Tank_German_01_Destroyed_Convex
+    1.asset
+  uploadId: 735260

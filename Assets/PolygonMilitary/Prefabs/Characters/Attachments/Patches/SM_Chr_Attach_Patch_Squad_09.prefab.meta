@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e886582dbe96956408b2041ffbf7abc0
+timeCreated: 1595369813
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Prefabs/Characters/Attachments/Patches/SM_Chr_Attach_Patch_Squad_09.prefab
+  uploadId: 735260

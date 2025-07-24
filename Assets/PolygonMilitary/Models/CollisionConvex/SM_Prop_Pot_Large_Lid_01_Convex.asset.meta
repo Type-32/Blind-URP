@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c1e5658043ae92b4a8fdc1ac53780a4b
+timeCreated: 1596420722
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Models/CollisionConvex/SM_Prop_Pot_Large_Lid_01_Convex.asset
+  uploadId: 735260

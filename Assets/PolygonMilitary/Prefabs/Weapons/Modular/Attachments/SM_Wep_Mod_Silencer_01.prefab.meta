@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 58563013acc463446bbdcef190d42184
+timeCreated: 1595301607
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Prefabs/Weapons/Modular/Attachments/SM_Wep_Mod_Silencer_01.prefab
+  uploadId: 735260

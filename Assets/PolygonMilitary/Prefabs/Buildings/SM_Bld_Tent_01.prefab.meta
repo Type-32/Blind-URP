@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f412087be1cfed240a11d8e9ae52096e
+timeCreated: 1592868118
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Prefabs/Buildings/SM_Bld_Tent_01.prefab
+  uploadId: 735260

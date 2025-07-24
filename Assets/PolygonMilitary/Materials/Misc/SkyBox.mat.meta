@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6adcc2396e3cbac4f9a7bf908d07cf91
+timeCreated: 1590614565
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Materials/Misc/SkyBox.mat
+  uploadId: 735260

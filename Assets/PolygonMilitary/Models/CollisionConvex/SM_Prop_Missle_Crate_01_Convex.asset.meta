@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0c16f77f81f174b4cb3b049c37641c28
+timeCreated: 1596421495
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 176304
+  packageName: POLYGON Military - Low Poly 3D Art by Synty
+  packageVersion: 1.9.1
+  assetPath: Assets/PolygonMilitary/Models/CollisionConvex/SM_Prop_Missle_Crate_01_Convex.asset
+  uploadId: 735260
