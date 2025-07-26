@@ -10880,8 +10880,8 @@
     "m_ObjectId": "dfc71defd3b54bada97ab87ff2c99e96",
     "m_Title": "Screen Pos to World Pos",
     "m_Position": {
-        "x": -3047.999755859375,
-        "y": 374.9999694824219
+        "x": -3048.0,
+        "y": 375.0
     }
 }
 
