@@ -1,4 +1,5 @@
 using System;
+using AI;
 using UnityEngine;
 
 namespace Blind.Mechanics
@@ -20,8 +21,11 @@ namespace Blind.Mechanics
 
         private void OnCollisionEnter(Collision other)
         {
-            StartSonarBall(transform.position, 5f, 0.5f, 2f);
-            Debug.Log("Collided");
+            if (other.gameObject.tag != "Player" || other.gameObject.tag != "PlayerHand")
+            {
+                StartSonarBall(transform.position, 5f, 0.5f, 2f);
+                Debug.Log("Collided");
+            }
         }
 
         private void FixedUpdate()
@@ -41,13 +45,14 @@ namespace Blind.Mechanics
             {
                 if (_outlineCounter < _waveOutlineDuration)
                 {
-                    _waveOutlineOpacity = Mathf.Lerp(_waveOutlineOpacity, 0f, Time.fixedDeltaTime * _waveOutlineDuration);
+                    _waveOutlineOpacity =
+                        Mathf.Lerp(_waveOutlineOpacity, 0f, Time.fixedDeltaTime * _waveOutlineDuration);
                     _outlineCounter += Time.fixedDeltaTime;
                 }
                 else
                     _waveOutlineOpacity = 0f;
             }
-            
+
             sonarBallMaterial.SetFloat("Range", _waveFalloff);
             sonarBallMaterial.SetFloat("Opacity", _waveFalloffOpacity);
             sonarBallMaterial.SetFloat("Edge Line Opacity", _waveOutlineOpacity);
@@ -62,8 +67,29 @@ namespace Blind.Mechanics
             _waveOutlineOpacity = _waveFalloffOpacity = 1f;
             _waveCounter = _outlineCounter = 0f;
             sonarBallMaterial.SetVector("Position", position);
-            
+
             _sonarStarted = true;
+        }
+
+        /// <summary>
+        /// Finds all AI agents within a given range and tells them to investigate the sound's origin.
+        /// </summary>
+        /// <param name="center">The center of the detection sphere (the sound's origin).</param>
+        /// <param name="detectionRange">How far the sound travels.</param>
+        public void DistractWithinRange(Vector3 center, float detectionRange)
+        {
+            Collider[] collidersInRange = Physics.OverlapSphere(center, detectionRange);
+
+            Debug.Log($"Sonar ping detected {collidersInRange.Length} colliders in a {detectionRange}m range.");
+
+            foreach (Collider col in collidersInRange)
+            {
+                if (col.TryGetComponent<PatrolAi>(out PatrolAi enemyAI))
+                {
+                    Debug.Log($"Distracting AI: {enemyAI.gameObject.name}");
+                    enemyAI.Distract(center);
+                }
+            }
         }
     }
 }

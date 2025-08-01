@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79a33eb9-1c50-4e9d-ab43-9a74eff2dbe1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AI/PatrolAi.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind URP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blind URP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/Misc/PolygonMilitary_Veh_Tank_Tracks.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/Misc/PolygonMilitary_Veh_Tank_Tracks.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/Misc/PolygonMilitary_Water_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/Misc/PolygonMilitary_Water_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/PolygonMilitary_Mat_02_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/PolygonMilitary_Mat_02_A.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/PolygonMilitary_Mat_03_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/PolygonMilitary_Mat_03_A.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/PolygonMilitary_Mat_04_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/PolygonMilitary_Mat_04_A.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/Vehicles/PolygonMilitary_Mat_Air_Vehicles_Burnt.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/Vehicles/PolygonMilitary_Mat_Air_Vehicles_Burnt.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/Vehicles/PolygonMilitary_Mat_Land_Vehicles_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonMilitary/Materials/Vehicles/PolygonMilitary_Mat_Land_Vehicles_3.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Modified Fullscreen Sonar Scanner Shader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Modified Fullscreen Sonar Scanner Shader.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/ModifiedFullscreenScannerShader.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/ModifiedFullscreenScannerShader.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/ai.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/ai.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/PatrolAi.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blind/Mechanics/SonarBallBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blind/Mechanics/SonarBallBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +132,9 @@
       <workItem from="1753334297095" duration="1357000" />
       <workItem from="1753511214614" duration="2144000" />
       <workItem from="1753516117132" duration="596000" />
+      <workItem from="1753690129414" duration="603000" />
+      <workItem from="1753925703601" duration="4000" />
+      <workItem from="1753925713236" duration="3593000" />
     </task>
     <servers />
   </component>
