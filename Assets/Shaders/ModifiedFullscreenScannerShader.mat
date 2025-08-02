@@ -49,8 +49,11 @@ Material:
     - _Edge_Line_Coverage: 7
     - _Edge_Line_Opacity: 1
     - _Edge_Opacity_Falloff: 0.9
+    - _ManualScale: 5
     - _Opacity: 0
     - _Range: 37.3
+    - _Scale1: 0
+    - _Scale2: 1
     - _Test: 0
     - _Wave_Falloff: 0.8
     m_Colors:
