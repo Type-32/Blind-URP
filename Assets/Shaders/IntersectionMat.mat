@@ -36,8 +36,8 @@ Material:
     RenderType: Transparent
   disabledShaderPasses:
   - DepthOnly
-  - SHADOWCASTER
   - MOTIONVECTORS
+  - SHADOWCASTER
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -64,6 +64,7 @@ Material:
     - _Cull: 0
     - _DstBlend: 10
     - _IntersectionDepth: 4
+    - _IntersectionDepthLength: 4
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 0
@@ -74,6 +75,6 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _IntersectionColor: {r: 0.25, g: 0.25, b: 0.25, a: 0.5882353}
+    - _IntersectionColor: {r: 2.670157, g: 2.670157, b: 2.670157, a: 0.5882353}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
