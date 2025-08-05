@@ -49,12 +49,15 @@ Material:
     - _Edge_Line_Coverage: 7
     - _Edge_Line_Opacity: 1
     - _Edge_Opacity_Falloff: 0.9
+    - _ManualScale: 1
     - _Opacity: 0
     - _Range: 22.06
+    - _Scale2: 1
     - _Test: 0
     - _Wave_Falloff: 0.42
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _PlayerPosition: {r: -23, g: 0.15, b: 19.66, a: 0}
     - _Position: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
