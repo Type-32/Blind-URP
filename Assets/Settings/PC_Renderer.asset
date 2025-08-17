@@ -88,10 +88,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   settings:
-    renderPassEvent: 500
+    renderPassEvent: 450
     outlineThickness: 2
     outlineColor: {r: 1, g: 1, b: 1, a: 1}
-    depthAmplifier: 5.3
+    depthAmplifier: 1
+    boundaryColor: {r: 0.26065895, g: 1.0489213, b: 1.4142135, a: 1}
+    boundaryWidth: 28.1
 --- !u!114 &7833122117494664109
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ Shader "Hidden/Edge Detection"
         _OutlineColor ("Outline Color", Color) = (0, 0, 0, 1)
         _BaseColor ("Base Color", Color) = (0,0,0,1) 
         _DepthAmplifier("Depth Amiplifier", Float) = 1.0
+        _BoundaryColor("Boundary Color", Color) = (0,0,1,1) 
+        _BoundaryWidth("Boudnary Width Power", Float) = 5.0
     }
 
     SubShader
@@ -35,6 +37,8 @@ Shader "Hidden/Edge Detection"
             float4 _OutlineColor;
             float4 _BaseColor;
             float _DepthAmplifier;
+            float4 _BoundaryColor;
+            float _BoundaryWidth;
             
             #pragma vertex Vert // vertex shader is provided by the Blit.hlsl include
             #pragma fragment frag
@@ -98,7 +102,7 @@ Shader "Hidden/Edge Detection"
                 
                 // sphere maskfloat sphereMask = SphereMask(float3(0,0,0), worldPos, 10);
                 float sphereMask = SphereMask(float3(0,0,0), worldPos, 10);
-                half4 sonarLight = half4(0,0,1,1) * SpatialFresnel(float3(0,0,0), worldPos, 10, 5,  2) * sphereMask;
+                half4 sonarLight = _BoundaryColor * SpatialFresnel(float3(0,0,0), worldPos, 10, _BoundaryWidth,  2) * sphereMask;
                 
                 // Generate 4 diagonally placed samples.
                 const float half_width_f = floor(_OutlineThickness * 0.5);

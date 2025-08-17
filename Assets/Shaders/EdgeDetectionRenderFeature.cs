@@ -15,6 +15,8 @@ namespace Shaders
             private static readonly int OutlineThicknessProperty = Shader.PropertyToID("_OutlineThickness");
             private static readonly int OutlineColorProperty = Shader.PropertyToID("_OutlineColor");
             private static readonly int DepthAmplifierColorProperty = Shader.PropertyToID("_DepthAmplifier");
+            private static readonly int BoundaryColorProperty = Shader.PropertyToID("_BoundaryColor");
+            private static readonly int BoundaryWidthProperty = Shader.PropertyToID("_BoundaryWidth");
 
             public EdgeDetectionPass()
             {
@@ -29,6 +31,9 @@ namespace Shaders
                 material.SetFloat(OutlineThicknessProperty, settings.outlineThickness);
                 material.SetColor(OutlineColorProperty, settings.outlineColor);
                 material.SetFloat(DepthAmplifierColorProperty, settings.depthAmplifier);
+                material.SetColor(BoundaryColorProperty, settings.boundaryColor);
+                material.SetFloat(BoundaryWidthProperty, settings.boundaryWidth);
+                
             }
 
             private class PassData
@@ -55,6 +60,8 @@ namespace Shaders
             [Range(0, 15)] public int outlineThickness = 3;
             public Color outlineColor = Color.black;
             public float depthAmplifier = 1.0f;
+            [ColorUsage(true, true)]public Color boundaryColor = Color.blue;
+            [Range(1, 100)]public float boundaryWidth;
         }
 
         [SerializeField] private EdgeDetectionSettings settings;
