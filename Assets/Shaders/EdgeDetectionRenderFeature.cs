@@ -17,6 +17,9 @@ namespace Shaders
             private static readonly int DepthAmplifierColorProperty = Shader.PropertyToID("_DepthAmplifier");
             private static readonly int BoundaryColorProperty = Shader.PropertyToID("_BoundaryColor");
             private static readonly int BoundaryWidthProperty = Shader.PropertyToID("_BoundaryWidth");
+            private static readonly int BoundaryOriginProperty = Shader.PropertyToID("_BoundaryOrigin");
+            private static readonly int BoundaryRangeProperty = Shader.PropertyToID("_BoundaryRange");
+
 
             public EdgeDetectionPass()
             {
@@ -33,38 +36,41 @@ namespace Shaders
                 material.SetFloat(DepthAmplifierColorProperty, settings.depthAmplifier);
                 material.SetColor(BoundaryColorProperty, settings.boundaryColor);
                 material.SetFloat(BoundaryWidthProperty, settings.boundaryWidth);
+                material.SetVector(BoundaryOriginProperty, settings.boundaryOrigin);
+                material.SetFloat(BoundaryRangeProperty, settings.boundaryRange);
+
                 
             }
 
-            private class PassData
-            {
-            }
-
+            private class PassData { }
             public override void RecordRenderGraph(RenderGraph renderGraph, ContextContainer frameData)
             {
                 var resourceData = frameData.Get<UniversalResourceData>();
-
                 using var builder = renderGraph.AddRasterRenderPass<PassData>("Edge Detection", out _);
-
                 builder.SetRenderAttachment(resourceData.activeColorTexture, 0);
                 builder.UseAllGlobalTextures(true);
                 builder.AllowPassCulling(false);
                 builder.SetRenderFunc((PassData _, RasterGraphContext context) => { Blitter.BlitTexture(context.cmd, Vector2.one, material, 0); });
             }
+
         }
 
         [Serializable]
         public class EdgeDetectionSettings
         {
             public RenderPassEvent renderPassEvent = RenderPassEvent.AfterRenderingTransparents;
+            [Tooltip("The world-space origin of the boundary effect.")]
+            public Vector3 boundaryOrigin = Vector3.zero; // <-- NEW
+            [Tooltip("The world-space radius of the boundary effect.")]
+            public float boundaryRange = 10f; // <-- NEW
             [Range(0, 15)] public int outlineThickness = 3;
             public Color outlineColor = Color.black;
             public float depthAmplifier = 1.0f;
-            [ColorUsage(true, true)]public Color boundaryColor = Color.blue;
-            [Range(1, 100)]public float boundaryWidth;
+            [ColorUsage(true, true)] public Color boundaryColor = Color.blue;
+            [Range(1, 100)] public float boundaryWidth;
         }
-
-        [SerializeField] private EdgeDetectionSettings settings;
+        
+        [SerializeField] public EdgeDetectionSettings settings;
         private Material edgeDetectionMaterial;
         private EdgeDetectionPass edgeDetectionPass;
 

@@ -4,10 +4,14 @@ Shader "Hidden/Edge Detection"
     {
         _OutlineThickness ("Outline Thickness", Float) = 1
         _OutlineColor ("Outline Color", Color) = (0, 0, 0, 1)
-        _BaseColor ("Base Color", Color) = (0,0,0,1) 
+        _BaseColor ("Base Color", Color) = (0,0,0,1)
         _DepthAmplifier("Depth Amiplifier", Float) = 1.0
-        _BoundaryColor("Boundary Color", Color) = (0,0,1,1) 
+        _BoundaryColor("Boundary Color", Color) = (0,0,1,1)
         _BoundaryWidth("Boudnary Width Power", Float) = 5.0
+        
+        // New uniforms to be controlled by the C# script
+        _BoundaryOrigin ("Boundary Origin", Vector) = (0,0,0,0)
+        _BoundaryRange ("Boundary Range", Float) = 10
     }
 
     SubShader
@@ -22,28 +26,30 @@ Shader "Hidden/Edge Detection"
         Cull Off
         Blend SrcAlpha OneMinusSrcAlpha
 
-        Pass 
+        Pass
         {
             Name "EDGE DETECTION OUTLINE"
-            
+
             HLSLPROGRAM
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
             #include "Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl"
-            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareDepthTexture.hlsl" // needed to sample scene depth
-            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareNormalsTexture.hlsl" // needed to sample scene normals
-            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareOpaqueTexture.hlsl" // needed to sample scene color/luminance
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareDepthTexture.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareNormalsTexture.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareOpaqueTexture.hlsl"
 
+            // Uniforms from the C# script
             float _OutlineThickness;
             float4 _OutlineColor;
             float4 _BaseColor;
             float _DepthAmplifier;
             float4 _BoundaryColor;
             float _BoundaryWidth;
+            float4 _BoundaryOrigin;
+            float _BoundaryRange;
             
-            #pragma vertex Vert // vertex shader is provided by the Blit.hlsl include
+            #pragma vertex Vert
             #pragma fragment frag
 
-            // Edge detection kernel that works by taking the sum of the squares of the differences between diagonally adjacent pixels (Roberts Cross).
             float RobertsCross(float3 samples[4])
             {
                 const float3 difference_1 = samples[1] - samples[2];
@@ -51,7 +57,6 @@ Shader "Hidden/Edge Detection"
                 return sqrt(dot(difference_1, difference_1) + dot(difference_2, difference_2));
             }
 
-            // The same kernel logic as above, but for a single-value instead of a vector3.
             float RobertsCross(float samples[4])
             {
                 const float difference_1 = samples[1] - samples[2];
@@ -59,13 +64,11 @@ Shader "Hidden/Edge Detection"
                 return sqrt(difference_1 * difference_1 + difference_2 * difference_2);
             }
             
-            // Helper function to sample scene normals remapped from [-1, 1] range to [0, 1].
             float3 SampleSceneNormalsRemapped(float2 uv)
             {
                 return SampleSceneNormals(uv) * 0.5 + 0.5;
             }
 
-            // Helper function to sample scene luminance.
             float SampleSceneLuminance(float2 uv)
             {
                 float3 color = SampleSceneColor(uv);
@@ -100,9 +103,11 @@ Shader "Hidden/Edge Detection"
                 #endif
                 float3 worldPos = ComputeWorldSpacePosition(screenUV, depth, UNITY_MATRIX_I_VP);
                 
-                // sphere maskfloat sphereMask = SphereMask(float3(0,0,0), worldPos, 10);
-                float sphereMask = SphereMask(float3(0,0,0), worldPos, 10);
-                half4 sonarLight = _BoundaryColor * SpatialFresnel(float3(0,0,0), worldPos, 10, _BoundaryWidth,  2) * sphereMask;
+                // === MODIFIED SECTION ===
+                // Use the new uniforms instead of hardcoded values for the sonar effect.
+                float sphereMask = SphereMask(_BoundaryOrigin.xyz, worldPos, _BoundaryRange);
+                half4 sonarLight = _BoundaryColor * SpatialFresnel(_BoundaryOrigin.xyz, worldPos, _BoundaryRange, _BoundaryWidth,  2) * sphereMask;
+                // ========================
                 
                 // Generate 4 diagonally placed samples.
                 const float half_width_f = floor(_OutlineThickness * 0.5);
@@ -141,8 +146,6 @@ Shader "Hidden/Edge Detection"
                 float edge_normal_final;
                 edge_normal_final = edge_normal > normal_threshold_2 ? 0.5 : 0;
                 edge_normal_final = edge_normal > normal_threshold ? 1 : 0;
-                
-                
                 
                 float luminance_threshold = 0.01f;
                 edge_luminance = edge_luminance > luminance_threshold ? 0.05 : 0;

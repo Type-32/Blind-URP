@@ -89,11 +89,13 @@ MonoBehaviour:
   m_Active: 1
   settings:
     renderPassEvent: 450
-    outlineThickness: 2
-    outlineColor: {r: 1, g: 1, b: 1, a: 1}
-    depthAmplifier: 1
-    boundaryColor: {r: 0.26065895, g: 1.0489213, b: 1.4142135, a: 1}
-    boundaryWidth: 28.1
+    boundaryOrigin: {x: -23.53781, y: 0.6140989, z: 18.10451}
+    boundaryRange: 0
+    outlineThickness: 1
+    outlineColor: {r: 0.07075471, g: 0.07075471, b: 0.07075471, a: 1}
+    depthAmplifier: 2
+    boundaryColor: {r: 0, g: 0, b: 0, a: 1}
+    boundaryWidth: 10
 --- !u!114 &7833122117494664109
 MonoBehaviour:
   m_ObjectHideFlags: 0
