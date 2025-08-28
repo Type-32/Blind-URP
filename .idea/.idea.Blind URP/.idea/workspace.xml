@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0851cab-b77c-4b23-9047-15e853d73076" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blind/Mechanics/SonarController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blind/Mechanics/SonarController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind URP/.idea/betterCommentsSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind URP/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind URP/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind-URP/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind-URP/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind-URP/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blind/Mechanics/SonarBallBehaviour.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blind/Mechanics/SonarBallBehaviour.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/EdgeDetectionRenderFeature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/EdgeDetectionRenderFeature.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/EdgeDetectionShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/EdgeDetectionShader.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Blind URP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Blind URP/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1756385237556</updated>
-      <workItem from="1756385238840" duration="370000" />
+      <workItem from="1756385238840" duration="1467000" />
     </task>
     <servers />
   </component>
