@@ -92,7 +92,7 @@ MonoBehaviour:
     boundaryOrigin: {x: -23.53781, y: 0.6140989, z: 18.10451}
     boundaryRange: 0
     outlineThickness: 1
-    outlineColor: {r: 0.07075471, g: 0.07075471, b: 0.07075471, a: 1}
+    outlineColor: {r: 0, g: 0, b: 0, a: 1}
     depthAmplifier: 2
     boundaryColor: {r: 0, g: 0, b: 0, a: 1}
     boundaryWidth: 10
